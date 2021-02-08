@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 20px;
+    font-size: 10px;
+  }
+}
+
+.header__logo {
+  height: 50px;
+  width: 104px;
+  margin-right: 65px;
+}
+
+.header__tel {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 10px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

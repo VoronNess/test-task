@@ -1,0 +1,46 @@
+{
+  "name": "elipceled",
+  "version": "1.0.0",
+  "description": "верстка тестового задания ЭлипсЛед",
+  "author": "Воронина Анастасия",
+  "license": "ISC",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "9.8.4",
+    "browser-sync": "^2.26.13",
+    "gulp": "4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "4.0.1",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-webp": "^4.0.1",
+    "stylelint": "13.6.1",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"less/**/*.less\" --syntax less",
+    "stylelint:fix": "stylelint \"less/**/*.less\" --fix",
+    "test": "npm run editorconfig && npm run stylelint:fix && npm run stylelint  ",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "*.html",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "less/**/*.less"
+  ],
+  "dependencies": {}
+}

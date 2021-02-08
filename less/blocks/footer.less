@@ -1,0 +1,82 @@
+.footer {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 10px;
+
+    &:hover,
+    &:focus {
+      color: lighten(black, 70%);
+    }
+  }
+
+  .tel {
+    position: relative;
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/icon-phone.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+
+  .mail {
+    position: relative;
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/icon-mail.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+
+  .github {
+    position: relative;
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/icon-github.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+}
